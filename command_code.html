@@ -1,0 +1,19 @@
+"Fix Hard Touch"
+
+1. Reduce Touchscreen Tap Timeout
+
+This can help if hard touch is related to delay in registering touches:
+
+Command:
+settings put secure long_press_timeout 300
+
+(Default is 500ms; lower means quicker response to touch)
+
+2. Try Lowering Touch Slop
+
+Touch slop is the distance in pixels a touch can wander before being considered a scroll.
+
+Command:
+settings put system touch_slop 8
+
+(Default is usually 16 or 8; lower = more sensitive)
