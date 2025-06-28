@@ -1,7 +1,30 @@
 [
 {
 "App":"",
-"code":" *Change Refresh Rate*
+"code":" *Fix or Tweaks Gyro Fix Delay*
+
+Command: 1
+cmd sensorservice set-mode 1
+Command: 2
+cmd sensorservice set-delay your.package.name 1 10000
+Command: 3
+setprop persist.dev.gyro_fast 1
+Command: 4
+setprop debug.sensors.hal.debug 1
+
+Back to Default or Reset
+Command: 1
+cmd sensorservice set-mode 0
+Command: 2
+cmd sensorservice set-delay your.package.name 1 66667
+Command: 3
+setprop persist.dev.gyro_fast ""
+Command:4
+setprop debug.sensors.hal.debug ""
+
+
+
+*Change Refresh Rate*
 
 Command: 1 
 settings put system refresh_rate 60
