@@ -2,6 +2,24 @@
 {
 "App":"",
 "code":"
+
+*Downscale Graphics Pixelated Any Games/Apps*
+
+Command:
+cmd game downscale 0.4 com.garena.game.codm;cmd game set --mode 2 --downscale 0.4 --fps 120 com.garena.game.codm
+device_config put game_overlay com.garena.game.codm mode=2, downscaleFactor=0.3, fps=120
+
+0.1|0.2|0.3|0.4|0.5|0.6|0.7|0.8|0.9
+
+Just replace the codm garena packagename to your game packagename
+
+Back to Default
+
+Command:
+device_config delete game_overlay (packagenams)
+cmd game mode 0
+
+
 *Fix or Tweaks Gyro Fix Delay*
 
 Command: 1
